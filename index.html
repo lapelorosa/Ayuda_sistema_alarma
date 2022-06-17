@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AyudaPeludo</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light"
+				style="z-index: 999999"
+			>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="./index.html"
+								>Inicio <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./sistema_alerta.html"
+								>Sistema de alerta</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div id="dashboard">
+				<div class="row my-5">
+					<div class="col-md-6">
+						<div class="card mx-auto" style="width: 25rem">
+							<div class="card-body" id="ultimos_sismos_chile">
+								<h5 class="card-title">Ultimos sismos</h5>
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mx-auto" style="width: 25rem">
+							<div class="card-body" id="tsunami_chile">
+								<h5 class="card-title">Tsunamis</h5>
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mx-auto" style="width: 25rem">
+							<div class="card-body" id="onemi">
+								<h5 class="card-title">Onemi</h5>
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mx-auto" style="width: 25rem">
+							<div class="card-body" id="ultimos_sismos">
+								<h5 class="card-title">Ultimos 15 sismos</h5>
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html"
+							>Inicio <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./sistema_alerta.html"
+							>Sistema de alerta</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<script src="./js/script.js"></script>
+		<script>
+			$(document).ready(() => onInitIndex());
+		</script>
+	</body>
+</html>
